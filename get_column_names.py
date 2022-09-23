@@ -7,11 +7,15 @@ def get_column_names(data):
     Returns:
         column_names: list of column names
     """
-   
-    column_name = data.split('\n')
-    column_name = data.split(',')
+      
     
-    return column_name[0:4]
+    column_name = data.split(',')
+    column_name = data.split('\n')
+    return list((column_name[0]).split(','))
 
 data = open('data.csv').read()
-print(get_column_names(data))
+#data = data.split('\n')
+# data = data.split(',')
+
+
+print(get_column_names((data)))
