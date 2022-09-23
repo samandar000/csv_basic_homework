@@ -8,7 +8,7 @@ def get_first_column(data):
     """
     list1 = data.split(',')
     list1 = data.split('\n')
-    return list((list1[1]).split('\n'))
+    return list((list1[0]).split('\n'))
 
 data = open('data.csv').read()
 #data = data.split('\n')
