@@ -6,12 +6,9 @@ def get_first_row(data):
     Return:
         list: First row.
    """
-   data = data.split('\n')
-   l = []
-   for i in data:
-        a = i.split(',')
-        l.append(a[0])   
-   return l
+   column_name = data.split(',')
+   column_name = data.split('\n')
+   return column_name[1].split(',')
 
 data = open('data.csv').read()
 
